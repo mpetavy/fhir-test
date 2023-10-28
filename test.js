@@ -1,5 +1,11 @@
 // run `node index.js` in the terminal
 const HL7 = require('hl7-standard');
+const moment = require('moment');
+
+var date = new Date();
+var formattedDate = moment(date).format('YYYYMMDD');
+
+console.log("!!! ",formattedDate)
 
 // console.log(`Hello Node.js v${process.versions.node}!`);
 
